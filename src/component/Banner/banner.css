@@ -1,0 +1,45 @@
+div.banner h2 {
+    font-family: 'Muli', sans-serif;
+}
+
+div.banner {
+    background-color: var(--color1);
+    color: black;
+    width: 100%;
+    font-family: Garamond;
+    font-size: 18px;
+}
+
+div.banner div.banner-content {
+    left: 7%;
+    padding-top: 50px; 
+    padding-left: 50px;
+    width: 90%;        /* base mobile */
+    max-width: 500px;  /* base mobile */
+    text-align: justify;
+    justify-content: flex-start;
+}
+
+div.banner > div.banner-content > p {
+    margin-bottom: 0px;
+    padding-bottom: 18px;
+    font-size: 1.1em;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    div.banner div.banner-content {
+        width: 60%;       /* exemplo */
+        max-width: 700px; /* ajuste para telas maiores */
+        padding-left: 60px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    div.banner div.banner-content {
+        width: 75%;
+        max-width: 75vw;  /* exemplo responsivo */
+        padding-left: 50px;
+    }
+}
